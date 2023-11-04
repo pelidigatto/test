@@ -18,17 +18,9 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'de',
     locales: ['de'],
@@ -98,13 +90,15 @@ const config = {
             items: [
               {
                 label: 'Xing',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                title:'xxx',
+                href: 'https://www.xing.com/profile/Florian_Thoenelt/',
+                title:'Xing Profil',
                 rel:'nofolow'
               },
               {
                 label: 'LinkedIn',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://www.linkedin.com/in/florian-th%C3%B6nelt-9834a896/',
+                itle:'LinkedIn Profil',
+                rel:'nofolow'
               }
             ],
           },
@@ -113,11 +107,13 @@ const config = {
             items: [
               {
                 label: 'go4launch.de',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://www.go4launch.de/',
+                title:'Go4Launch - Raumfahrt Datenbank',
               },
               {
                 label: 'vicesix.de',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://www.vicesix.de/',
+                title: 'ViceSix - GTA und Rockstar Games Blog'
               },
             ],
           },
