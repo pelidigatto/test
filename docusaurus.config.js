@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Florian Thönelt',
-  tagline: 'Test',
+  tagline: 'Webentwickler',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -30,8 +30,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'de',
+    locales: ['de'],
   },
 
   presets: [
@@ -41,17 +41,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -90,46 +82,47 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: ' ',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Impressum',
+                to: '/docs/intro',
+              },{
+                label: 'Datenschutz',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Social Media',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Xing',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                title:'xxx',
+                rel:'nofolow'
               },
               {
-                label: 'Discord',
+                label: 'LinkedIn',
                 href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              }
             ],
           },
           {
-            title: 'More',
+            title: 'Projekte',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'go4launch.de',
+                href: 'https://github.com/facebook/docusaurus',
               },
               {
-                label: 'GitHub',
+                label: 'vicesix.de',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Florian Thönelt.`,
       },
       prism: {
         theme: prismThemes.github,

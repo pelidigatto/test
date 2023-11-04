@@ -7,5 +7,6 @@ export default function MyReactPage() {
       <h1>My React page</h1>
       <p>This is a React page</p>
     </Layout>
+    
   );
 }

@@ -6,7 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-
+import CookieConsent from "react-cookie-consent";
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -28,16 +28,25 @@ function HomepageHeader() {
   );
 }
 
+
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
+
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
+      <cookieBanner />
       <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
+      <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} overlay buttonText="Akzeptieren" style={{background: "#303846",padding:"2.5rem",fontSize:"1.2rem"}}
+                      buttonStyle={{background:"#2e8555",padding:"15px 30px",color:"#fff",fontSize:"1rem"}}
+      >
+          Diese Webseite verwendet Cookies, um die Benutzererfahrung zu verbessern. Durch die Nutzung unserer Webseite stimmen Sie der Verwendung aller Cookies gemäß unserer Cookie-Richtlinie zu.
+      </CookieConsent>
     </Layout>
   );
 }
